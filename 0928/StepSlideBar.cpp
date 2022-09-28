@@ -8,6 +8,8 @@ void draw_rectangle(int c, int r);
 void move_arrow_key(char key, int *x1, int *y1, int x_b, int y_b);
 void gotoxy(int x, int y);
 
+int step = 0;
+
 int main(void)
 {
    char *slide="■", key;
@@ -20,6 +22,9 @@ int main(void)
    printf("수직 슬라이드바의 길이(최대 19)를 \n");
    printf("입력하고 Enter>");
    scanf("%d", &v_slide_length);
+   
+   printf("Step의 길이를 입력하고  Enter>");
+   scanf("%d", &step);
    system("cls");
 
    do
@@ -87,19 +92,19 @@ void move_arrow_key(char key, int *x1, int *y1, int x_b, int y_b)
 	switch(key)
 	{
 	case 72:  //위쪽(상) 방향의 화살표 키 입력
-		*y1=*y1-1;
+		*y1=*y1-step;
 		if (*y1<1)	*y1=1; //y좌표의 최소값
 		break;
 	case 75:  //왼쪽(좌) 방향의 화살표 키 입력
-		*x1=*x1-1;
+		*x1=*x1-step;
 		if (*x1<1)	*x1=1; //x좌표의 최소값
 		break;
 	case 77:  //오른쪽(우) 방향의 화살표 키 입력
-		*x1=*x1+1;
+		*x1=*x1+step;
 		if (*x1>x_b)  *x1=x_b; //x좌표의 최대값
 		break;
 	case 80:  //아래쪽(하) 방향의 화살표 키 입력
-		*y1=*y1+1;
+		*y1=*y1+step;
 		if (*y1>y_b)  *y1=y_b; //y좌표의 최대값
 		break;
 	default:
