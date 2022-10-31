@@ -2,20 +2,12 @@
 
 ## 사용한 Framework : 
 
-[bootstrap](https://getbootstrap.com/)
-
-/ 
-
-[bulma](https://bulma.io/)
-
-/ 
-
-[uikit](https://getuikit.com/)
+[bootstrap](https://getbootstrap.com/) / [bulma](https://bulma.io/) / [uikit](https://getuikit.com/)
 
 -----------------------------------------------------------------------
 
 ## 관련 페이지 주소
 
 [HTML](https://github.com/WeslySloan/Game-Programming/blob/main/CssFramework/index.html)  
-[github.io]
+[github.io](https://weslysloan.github.io/Game-Programming/)
 [netflify]
