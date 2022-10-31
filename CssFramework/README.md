@@ -8,6 +8,6 @@
 
 ## 관련 페이지 주소
 
-[HTML](https://github.com/WeslySloan/Game-Programming/blob/main/CssFramework/index.html)  
-[github.io](https://weslysloan.github.io/Game-Programming/)
-[netflify]
+[HTML 본문](https://github.com/WeslySloan/Game-Programming/blob/main/CssFramework/index.html)  
+[github.io-웹 호스팅](https://weslysloan.github.io/Game-Programming/)
+[netflify-웹 호스팅](https://cssframeworkweslysloan.netlify.app/)
