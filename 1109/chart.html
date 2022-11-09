@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+<canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
+<canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
+
+<script>
+
+// 바 차트  ----------------------------------------------------------------------------------------
+
+var xValues = ["2021년 1분기", "2021년 2분기", "2021년 3분기", "2021년 4분기"];
+var yValues = [0, 0, 62, 71];
+var barColors = ["red", "green","blue","orange"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+        title: {
+        display: true,
+        text: "2021년 분기별 github commit 횟수"
+        }
+  }
+});
+
+// 원형 차트 ---------------------------
+
+var xValues3 = ["2022년 1분기", "2022년 2분기", "2022년 3분기", "2022년 4분기"];
+var yValues3 = [66, 99, 82, 31];
+var barColors = [
+  "red",
+  "green",
+  "blue",
+  "orange",
+];
+
+new Chart("myChart3", {
+  type: "pie",
+  data: {
+    labels: xValues3,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues3
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "2022년 분기별 git  hub commit 횟수"
+    }
+  }
+});
+
+// 선 차트 ----------------------------------------------
+
+var xValues2 = ["~2021", "2021년 1분기", "2021년 2분기", "2021년 3분기", "2021년 4분기", "2022년 1분기", "2022년 2분기", "2022년 3분기", "2022년 4분기"];
+var yValues2 = [0, 0, 0, 62, 71, 66, 99, 82, 31];
+
+new Chart("myChart2", {
+  type: "line",
+  data: {
+    labels: xValues2,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "rgba(0,0,255,0.1)",
+      data: yValues2
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:100}}],
+    }
+  }
+});
+
+
+</script>
+
+</body>
+</html>
