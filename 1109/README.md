@@ -13,4 +13,4 @@
 
 [HTML 본문](https://github.com/WeslySloan/Game-Programming/blob/main/1109/chart.html) 
  
-[github.io-웹 호스팅](https://weslysloan.github.io/Game-Programming/)
+[netlify-웹 호스팅](https://weslsloanchart.netlify.app/)
